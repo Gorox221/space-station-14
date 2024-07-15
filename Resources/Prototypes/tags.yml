@@ -1350,4 +1350,6 @@
 - type: Tag
   id: WriteIgnoreStamps
 
+- type: Tag
+  id: Laser
 # ALPHABETICAL
