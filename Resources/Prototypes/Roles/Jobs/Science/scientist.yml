@@ -18,6 +18,7 @@
   id: ScientistGear
   equipment:
     ears: ClothingHeadsetScience
+    eyes: ClothingEyesGlassesChemical
   #storage:
     #back:
     #- Stuff

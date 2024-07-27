@@ -23,6 +23,7 @@
     id: ResearchAssistantPDA
     ears: ClothingHeadsetScience
     pocket2: BookScientistsGuidebook
+    eyes: ClothingEyesGlassesChemical
   #storage:
     #back:
     #- Stuff
