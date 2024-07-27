@@ -65,6 +65,7 @@
   - type: ReagentTank
   - type: Transform
     noRot: true
+  - type: MesonsNonviewable
 
 # For highcap tanks
 - type: entity

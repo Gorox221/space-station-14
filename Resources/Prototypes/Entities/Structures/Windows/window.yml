@@ -92,6 +92,7 @@
   - type: StaticPrice
     price: 100
   - type: BlockWeather
+  - type: MesonsNonviewable
   
 - type: entity
   id: WindowRCDResistant
@@ -195,6 +196,7 @@
       sprite: Structures/Windows/cracks_directional.rsi
   - type: StaticPrice
     price: 10
+  - type: MesonsNonviewable
 
 - type: entity
   id: WindowDirectionalRCDResistant  

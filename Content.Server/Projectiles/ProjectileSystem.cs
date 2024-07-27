@@ -18,8 +18,6 @@ public sealed class ProjectileSystem : SharedProjectileSystem
     [Dependency] private readonly GunSystem _guns = default!;
     [Dependency] private readonly SharedCameraRecoilSystem _sharedCameraRecoil = default!;
 
-    private EntityQuery<PenetratableComponent> _penetratableQuery;
-
     public override void Initialize()
     {
         base.Initialize();

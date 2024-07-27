@@ -41,6 +41,7 @@
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
+  - type: MesonsNonviewable
 
 - type: entity
   abstract: true

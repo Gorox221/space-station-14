@@ -99,6 +99,7 @@
   - type: IgniteOnCollide
     fixtureId: fix1
     fireStacks: 1
+  - type: MesonsNonviewable
 
 - type: entity
   id: AnomalyGravity

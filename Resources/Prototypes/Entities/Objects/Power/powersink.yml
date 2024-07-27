@@ -35,6 +35,7 @@
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
     - type: PowerSink
+    - type: MesonsNonviewable
     - type: Battery
       maxCharge: 7500000
       pricePerJoule: 0.0003

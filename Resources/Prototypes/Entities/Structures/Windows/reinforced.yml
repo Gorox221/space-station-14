@@ -55,6 +55,7 @@
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks.rsi
+  - type: MesonsNonviewable
 
 - type: entity
   parent: ReinforcedWindow
@@ -74,6 +75,7 @@
   - type: Occluder
   - type: StaticPrice
     price: 44
+  - type: MesonsNonviewable
 
 - type: entity
   id: WindowReinforcedDirectional
@@ -134,6 +136,7 @@
         acts: [ "Destruction" ]
   - type: StaticPrice
     price: 22
+  - type: MesonsNonviewable
 
 - type: entity
   parent: ReinforcedWindow

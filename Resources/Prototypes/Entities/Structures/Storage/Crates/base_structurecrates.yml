@@ -90,6 +90,7 @@
     containers:
       - entity_storage
   - type: RequireProjectileTarget
+  - type: MesonsNonviewable
 
 - type: entity
   parent: CrateGeneric
