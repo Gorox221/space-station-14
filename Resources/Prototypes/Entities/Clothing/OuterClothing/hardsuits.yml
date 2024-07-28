@@ -185,6 +185,29 @@
     coefficient: 0.001
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitMaxim
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellSmall
+  - type: EnergyDomeGenerator
+    damageEnergyDraw: 6
+    domePrototype: EnergyDomeSmallPink
+  - type: PowerCellDraw
+    drawRate: 8
+    useRate: 0
+  - type: UseDelay
+    delay: 10.0
 
 #Security Hardsuit
 - type: entity
@@ -771,6 +794,29 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertleader.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTLeader
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellSmall
+  - type: EnergyDomeGenerator
+    damageEnergyDraw: 6
+    domePrototype: EnergyDomeSmallBlue
+  - type: PowerCellDraw
+    drawRate: 8
+    useRate: 0
+  - type: UseDelay
+    delay: 10.0
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -881,6 +927,29 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHigh
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellHigh
+  - type: EnergyDomeGenerator
+    damageEnergyDraw: 6
+    domePrototype: EnergyDomeSmallBlue
+  - type: PowerCellDraw
+    drawRate: 8
+    useRate: 0
+  - type: UseDelay
+    delay: 10.0
 
 #CBURN Hardsuit
 - type: entity
