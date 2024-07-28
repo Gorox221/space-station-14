@@ -5,7 +5,7 @@
   description: Plasma cutter
   components:
   - type: Sprite
-    sprite: Regal/Objects/Weapons/cutter.rsi
+    sprite: ENT/Objects/Weapons/cutter.rsi
     layers:
     - state: icon
   - type: Gun

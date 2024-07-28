@@ -14,7 +14,7 @@
     back: ClothingBackpackSatchel
     mask: ClothingMaskNinja
     head: ClothingHeadHelmetSpaceNinja
-    eyes: ClothingEyesVisorNinja
+    eyes: ClothingEyesNightVision
     gloves: ClothingHandsGlovesSpaceNinja
     outerClothing: ClothingOuterSuitSpaceNinja
     shoes: ClothingShoesSpaceNinja

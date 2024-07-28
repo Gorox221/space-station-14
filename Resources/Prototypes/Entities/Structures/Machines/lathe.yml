@@ -271,6 +271,9 @@
     - Dropper
     - ClothingEyesGlassesChemical
     dynamicRecipes:
+      - ClothingEyesNightVision
+      - ClothingEyesNightVisionMeson
+      - ClothingEyesNightVisionScience
       - WeaponPlasmaCutter
       - PowerDrill
       - MiningDrill
@@ -364,6 +367,7 @@
       - MagazineShotgunIncendiary
       - MagazineShotgunIncendiary
       - PortableRecharger
+      - ClothingEyesNightVisionSecurity
       - PowerCageHigh
       - PowerCageMedium
       - PowerCageSmall
@@ -921,6 +925,7 @@
       - ClothingEyesGlassesChemical
       - WhiteCane
     dynamicRecipes:
+      - ClothingEyesNightVisionMedicine
       - ChemicalPayload
       - CryostasisBeaker
       - BluespaceBeaker

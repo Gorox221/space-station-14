@@ -181,6 +181,21 @@
     - BorgModuleAdvancedTool
     - BorgModuleRCD
 
+- type: technology
+  id: AdvancedNVDTechnology
+  name: research-technology-advanced-night
+  icon:
+    sprite: ENT/Clothing/Eyes/NVD/mesonnvd.rsi
+    state: icon
+  discipline: Industrial
+  tier: 2
+  cost: 15000
+  recipeUnlocks:
+    - ClothingEyesNightVisionScience
+    - ClothingEyesNightVisionSecurity
+    - ClothingEyesNightVisionMeson
+    - ClothingEyesNightVisionMedicine
+    
 # Tier 3
 
 - type: technology
