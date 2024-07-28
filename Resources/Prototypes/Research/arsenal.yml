@@ -217,3 +217,17 @@
   - ShuttleGunDusterCircuitboard
   technologyPrerequisites:
   - BasicShuttleArmament
+
+- type: technology
+  id: AdvancedEnergyBarriers
+  name: research-technology-advanced-energy-barriers
+  icon: 
+    sprite: Objects/Tools/EnergyDome/nt.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 3
+  cost: 10000
+  recipeUnlocks:
+  - EnergyDomeGeneratorPersonalNT
+  technologyPrerequisites:
+  - EnergyBarriers

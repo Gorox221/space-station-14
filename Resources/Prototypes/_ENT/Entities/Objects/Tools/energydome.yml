@@ -1,4 +1,48 @@
 - type: entity
+  name: personal shield generator
+  description: A personal shield generator that protects the wearer from lasers and bullets but prevents from using ranged weapons himself. Uses a power cell.
+  id: EnergyDomeGeneratorPersonalNT
+  parent: BaseItem
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - Belt
+  - type: Sprite
+    sprite: Objects/Tools/EnergyDome/nt.rsi
+    layers:
+      - state: icon
+  - type: ClothingSpeedModifier
+    walkModifier: 0.70
+    sprintModifier: 0.70
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellSmall
+  - type: EnergyDomeGenerator
+    damageEnergyDraw: 5
+    domePrototype: EnergyDomeSmallBlue
+  - type: PowerCellDraw
+    drawRate: 13
+    useRate: 0
+  - type: UseDelay
+    delay: 10.0
+  - type: ItemToggle
+    onUse: false
+
+- type: entity
   name: blood red personal shield generator
   description: A personal shield generator that protects the wearer from lasers and bullets but prevents from using ranged weapons himself. Uses a power cell.
   id: EnergyDomeGeneratorPersonalSyndie

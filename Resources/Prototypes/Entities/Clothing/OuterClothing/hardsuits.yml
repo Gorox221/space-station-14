@@ -208,6 +208,8 @@
     useRate: 0
   - type: UseDelay
     delay: 10.0
+  - type: ItemToggle
+    onUse: false
 
 #Security Hardsuit
 - type: entity
@@ -817,6 +819,8 @@
     useRate: 0
   - type: UseDelay
     delay: 10.0
+  - type: ItemToggle
+    onUse: false
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -950,6 +954,8 @@
     useRate: 0
   - type: UseDelay
     delay: 10.0
+  - type: ItemToggle
+    onUse: false
 
 #CBURN Hardsuit
 - type: entity

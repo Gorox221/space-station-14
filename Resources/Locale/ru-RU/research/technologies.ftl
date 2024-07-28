@@ -68,3 +68,4 @@ research-technology-quantum-fiber-weaving = Плетение квантовог�
 research-technology-bluespace-cargo-transport = Блюспейс-транспортировка грузов
 research-technology-advanced-night = Продвинутые приборы ночного видения
 research-technology-energy_barriers = Энергетические барьеры
+research-technology-advanced-energy-barriers = Персональные энергетические барьеры

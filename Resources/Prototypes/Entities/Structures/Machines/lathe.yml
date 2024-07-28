@@ -806,6 +806,7 @@
       - WeaponLaserCannon
       - WeaponLaserCarbine
       - WeaponXrayCannon
+      - EnergyDomeGeneratorPersonalNT
   - type: MaterialStorage
     whitelist:
       tags:
