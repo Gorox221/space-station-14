@@ -1,0 +1,48 @@
+# Base configuration preset used on all Wizard's Den servers.
+# Loaded before server-specific config presets by configuration.
+
+[game]
+hostname = "[RU][MRP]⭐️Enterprice - Main"
+desc             = "💫Enterprice - новый проект серверов в пространстве SS14. 👀Сервер имеет уникальные механики, такие как: ксенобиология, боевые мехи, суперматерия, а так же блюспейс харвестер."
+lobbyenabled     = true
+soft_max_players = 50
+panic_bunker.enabled = true
+panic_bunker.disable_with_admins = true
+panic_bunker.enable_without_admins = true
+panic_bunker.show_reason = true
+panic_bunker.custom_reason = "У вас нехватает наигранного времени для входа в бункер. Возвращайтесь позже."
+
+[infolinks]
+# discord    = "https://discord.spacestation14.io"
+wiki       = "https://wiki.spacestation14.io"
+# appeal     = "https://appeal.ss14.io"
+
+[server]
+rules_file = "StandardRuleset"
+
+[net]
+max_connections = 1024
+tickrate = 30
+
+[vote]
+restart_required_ratio = 0.7
+
+[netres]
+limit = 10.0
+
+[admin]
+see_own_notes = true
+deadmin_on_join = false
+new_player_threshold = 600
+alert.min_players_sharing_connection = 2
+
+[worldgen]
+enabled = true
+
+[auth]
+mode = 1
+
+[hub]
+advertise = true
+# server_url = "ss14://..."
+tags = "lang:ru,rp:med,region:eu_e"
