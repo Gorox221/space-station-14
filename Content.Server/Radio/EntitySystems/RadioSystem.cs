@@ -4,6 +4,7 @@ using Content.Server.Power.Components;
 using Content.Server.Radio.Components;
 using Content.Server.VoiceMask;
 using Content.Shared.Chat;
+using Content.Shared.Access.Systems;
 using Content.Shared.Database;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
@@ -29,6 +30,7 @@ public sealed class RadioSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private readonly SharedIdCardSystem _cardSystem = default!;
 
     // set used to prevent radio feedback loops.
     private readonly HashSet<string> _messages = new();
@@ -84,6 +86,21 @@ public sealed class RadioSystem : EntitySystem
 
         name = FormattedMessage.EscapeText(name);
 
+    	if (_cardSystem.TryFindIdCard(messageSource, out var idCard))
+		{
+			var color = idCard.Comp.JobColor;
+			var job = idCard.Comp.JobTitle;
+
+			if (job is not null)
+				name = Loc.GetString("chat-radio-format-name-by-title", 
+					("jobTitle", job[0].ToString().ToUpper() + job.Substring(1)), 
+					("name", name));
+
+		    name = Loc.GetString("chat-radio-format-name-by-color", 
+				("jobColor", color.ToHex()), 
+				("name", name));
+		}
+        
         SpeechVerbPrototype speech;
         if (mask != null
             && mask.Enabled

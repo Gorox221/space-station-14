@@ -28,6 +28,11 @@ public sealed partial class IdCardComponent : Component
     [AutoNetworkedField]
     public string JobIcon = "JobIconUnknown";
 
+	[DataField("jobColor"), ViewVariables(VVAccess.ReadWrite)]
+    [AutoNetworkedField]
+    [Access(typeof(SharedIdCardSystem), typeof(SharedPdaSystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWrite)]
+    public Color JobColor { get; set; } = Color.FromHex("#FFFFFF");
+
     /// <summary>
     /// The unlocalized names of the departments associated with the job
     /// </summary>
