@@ -7,8 +7,8 @@ desc             = "💫Enterprice - новый проект серверов в
 lobbyenabled     = true
 soft_max_players = 50
 panic_bunker.enabled = true
-panic_bunker.disable_with_admins = true
-panic_bunker.enable_without_admins = true
+panic_bunker.disable_with_admins = false
+panic_bunker.enable_without_admins = false
 panic_bunker.show_reason = true
 panic_bunker.custom_reason = "У вас нехватает наигранного времени для входа в бункер. Возвращайтесь позже."
 
@@ -44,5 +44,5 @@ mode = 1
 
 [hub]
 advertise = true
-# server_url = "ss14://..."
+server_url = "ss14://121.127.37.49:1984"
 tags = "lang:ru,rp:med,region:eu_e"
