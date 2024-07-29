@@ -83,3 +83,9 @@
   - Zombie
   - SimpleHostile
   - Dragon
+
+- type: npcFaction
+  id: XenoSlime
+  hostile:
+  - Passive
+  - Zombie
