@@ -4,9 +4,17 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
+    - !type:RoleTimeRequirement
+      role: JobDetective
+      time: 10800 #3 hrs
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 28800 #8 hrs
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 108000 #50 hrs # Corvax-RoleTime
+      time: 43200 # 12 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 64800 #18 hrs
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
