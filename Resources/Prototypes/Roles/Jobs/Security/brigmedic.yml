@@ -1,0 +1,29 @@
+- type: job
+  id: BrigMedic
+  name: job-name-brigmedic
+  description: job-description-brigmedic
+  playTimeTracker: JobBrigmedic
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 7200 #2 hrs # Corvax-RoleTime
+  startingGear: BrigMedicGear
+  icon: "JobIconBrigmedic"
+  supervisors: job-supervisors-hos
+  access:
+  - Security
+  - Brig
+  - Medical
+  - Maintenance
+  extendedAccess:
+  - Chemistry
+
+- type: startingGear
+  id: BrigMedicGear
+  equipment:
+    ears: ClothingHeadsetBrigmedic
+    id: BrigmedicPDA
+    belt: ClothingBeltMedicalFilled
+  storage:
+    back:
+    - Flash

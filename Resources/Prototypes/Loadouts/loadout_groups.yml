@@ -1046,6 +1046,39 @@
   - EmergencyOxygenSecurity
   - LoadoutSpeciesEVANitrogen
 
+- type: loadoutGroup
+  id: BrigMedicHead
+  name: loadout-group-brigmedic-head
+  minLimit: 0
+  loadouts:
+  - SecurityHelmetMedic
+  - BrigmedicHatBeret
+  - BrigmedicHatBeretBlack
+
+- type: loadoutGroup
+  id: BrigMedicJumpsuit
+  name: loadout-group-brigmedic-jumpsuit
+  loadouts:
+  - BrigmedicJumpsuit
+  - BrigmedicJumpskirt
+
+- type: loadoutGroup
+  id: BrigMedicBackpack
+  name: loadout-group-brigmedic-backpack
+  loadouts:
+  - BrigmedicBackpack
+  - BrigmedicSatchel
+  - BrigmedicDuffel
+
+- type: loadoutGroup
+  id: BrigMedicOuterClothing
+  name: loadout-group-brigmedic-outerclothing
+  loadouts:
+  - VestSecurityMedic
+  - CoatLabSecurityMedic
+  - CoatAMG
+
+
 # Medical
 - type: loadoutGroup
   id: ChiefMedicalOfficerHead

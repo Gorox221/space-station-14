@@ -132,6 +132,10 @@ loadout-group-detective-neck = Детектив, шея
 loadout-group-detective-jumpsuit = Детектив, комбинезон
 loadout-group-detective-outerclothing = Детектив, верхняя одежда
 loadout-group-security-cadet-jumpsuit = Кадет СБ, комбинезон
+loadout-group-brigmedic-head = Бригмедик, голова
+loadout-group-brigmedic-jumpsuit = Бригмедик, комбинезон
+loadout-group-brigmedic-backpack = Бригмедик, рюкзак
+loadout-group-brigmedic-outerclothing = Бригмедик, верхняя одежда
 # Medical
 loadout-group-medical-gloves = Медицинский отдел, перчатки
 loadout-group-medical-mask = Медицинский отдел, маска

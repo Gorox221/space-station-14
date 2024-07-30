@@ -389,6 +389,22 @@
   - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
+  id: JobBrigMedic
+  groups:
+  - Inventory # Corvax-Loadouts
+  - BrigMedicHead
+  - MedicalMask
+  - BrigMedicJumpsuit
+  - BrigMedicBackpack
+  - BrigMedicOuterClothing
+  - MedicalGloves
+  - SecurityShoes
+  - SurvivalSecurity
+  - Glasses
+  - Trinkets
+  - GroupSpeciesBreathToolSecurity
+
+- type: roleLoadout
   id: JobDetective
   groups:
   - Inventory # Corvax-Loadouts
