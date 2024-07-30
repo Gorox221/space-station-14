@@ -294,6 +294,7 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: WeaponMultiphaseEnergyPistol
       - id: BookBusido # Corvax-Books
       - id: BookSpaceLaw
 
@@ -321,6 +322,7 @@
       - id: SecurityTechFabCircuitboard
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
+      - id: WeaponMultiphaseEnergyPistol
       - id: BookSecretDocuments
       - id: BookSpaceLaw
 

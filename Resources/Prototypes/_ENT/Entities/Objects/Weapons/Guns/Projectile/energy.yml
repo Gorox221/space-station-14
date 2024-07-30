@@ -23,3 +23,98 @@
     lifetime: 0.4
   - type: GatheringProjectile
     amount: 10
+
+- type: entity
+  id: BulletIonRifle
+  name: EMP impulse
+  parent: BaseBulletTrigger
+  noSpawn: true
+  components:
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+    layers:
+    - state: omnilaser_greyscale
+      color: blue
+  - type: Projectile
+    impactEffect: BulletImpactEffectDisabler
+    damage:
+      types:
+        Shock: 5
+    soundHit:
+      collection: WeakHit
+    forceSound: true
+  - type: EmpOnTrigger
+    range: 2
+    energyConsumption: 200
+    disableDuration: 5
+  - type: Ammo
+    muzzleFlash: null
+  - type: PointLight
+    radius: 3.5
+    color: blue
+    energy: 0.5
+
+- type: entity
+  name: ShutDownOrb
+  id: BulletShutdownOrb
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Sprite
+    noRot: true
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    color: "#ffff33"
+    layers:
+    - state: spark
+      shader: unshaded
+  - type: Physics
+  - type: Ammo
+  - type: Projectile
+    damage:
+      types:
+        Heat: 5
+    soundHit:
+      path: "/Audio/Weapons/Guns/Hits/taser_hit.ogg"
+    soundForce: true
+  - type: StaminaDamageOnCollide
+    damage: 75
+  - type: TimedDespawn
+    lifetime: 0.1
+
+- type: entity
+  name: LethalOrb
+  id: BulletStaminaOrb
+  parent: BaseBullet
+  noSpawn: true
+  components:
+  - type: FlyBySound
+    sound:
+      collection: EnergyMiss
+      params:
+        volume: 5
+  - type: Sprite
+    noRot: true
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    color: "#32aaff"
+    layers:
+    - state: spark
+      shader: unshaded
+  - type: Physics
+  - type: Ammo
+  - type: Projectile
+    damage:
+      types:
+        Heat: 20
+    soundHit:
+      path: "/Audio/Weapons/Guns/Hits/taser_hit.ogg"
+    soundForce: true
+  - type: StaminaDamageOnCollide
+    damage: 10
