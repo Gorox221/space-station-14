@@ -944,6 +944,22 @@
     state: pda-brigmedic
 
 - type: entity
+  parent: BasePDA
+  id: RoboPDA
+  name: RoboPDA
+  description: You can never know if there's a rogue ai inside. Hopefully, there's none.
+  components:
+  - type: Pda
+    id: RoboticistIDCard
+    state: pda-roboticist
+  - type: PdaBorderColor
+    borderColor: "#484848"
+    accentHColor: "#8b2400"
+    accentVColor: "#8b2400"
+  - type: Icon
+    state: pda-roboticist
+
+- type: entity
   parent: ClownPDA
   id: CluwnePDA
   name: cluwne PDA

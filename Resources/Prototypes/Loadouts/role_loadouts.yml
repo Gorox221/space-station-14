@@ -333,6 +333,22 @@
   - GroupSpeciesBreathTool
 
 - type: roleLoadout
+  id: JobRoboticist
+  groups:
+  - Inventory # Corvax-Loadouts
+  - GroupTankHarness
+  - ScientistHead
+  - ScientistNeck
+  - RoboticistJumpsuit
+  - RoboticistBackpack
+  - RoboticistOuterClothing
+  - ScientistGloves
+  - ScientistShoes
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: roleLoadout
   id: JobResearchAssistant
   groups:
   - Inventory # Corvax-Loadouts

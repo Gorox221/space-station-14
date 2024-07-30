@@ -93,6 +93,7 @@
   - ResearchDirector
   - Scientist
   - ResearchAssistant
+  - Roboticist
 
 - type: department
   id: Specific

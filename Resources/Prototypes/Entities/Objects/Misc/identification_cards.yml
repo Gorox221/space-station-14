@@ -803,6 +803,18 @@
     jobTitle: Centcom Quarantine Officer
 
 - type: entity
+  parent: PassengerIDCard
+  id: RoboticistIDCard
+  name: roboticist ID card
+  components:
+  - type: PresetIdCard
+    job: Roboticist
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idroboticist
+
+- type: entity
   parent: IDCardStandard
   id: CluwneIDCard
   name: cluwne ID card

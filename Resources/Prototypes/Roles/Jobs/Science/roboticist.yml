@@ -1,0 +1,24 @@
+- type: job
+  id: Roboticist
+  name: job-name-roboticist
+  description: job-description-roboticist
+  playTimeTracker: JobRoboticist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 25200 #7 hrs
+  startingGear: RoboticistGear
+  icon: "JobIconRoboticist"
+  supervisors: job-supervisors-rd
+  access:
+  - Research
+  - Maintenance
+
+- type: startingGear
+  id: RoboticistGear
+  equipment:
+    id: RoboPDA
+    ears: ClothingHeadsetRobotics
+  #storage:
+    #back:
+    #- Stuff

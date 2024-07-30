@@ -112,6 +112,8 @@ loadout-group-scientist-gloves = Учёный, перчатки
 loadout-group-scientist-shoes = Учёный, обувь
 loadout-group-scientist-id = Учёный, ID
 loadout-group-research-assistant-jumpsuit = Научный ассистент, комбинезон
+loadout-group-roboticist-jumpsuit = Учёный, комбинезон
+loadout-group-roboticist-outerclothing = Учёный, верхняя одежда
 # Security
 loadout-group-head-of-security-head = Глава службы безопасности, голова
 loadout-group-head-of-security-jumpsuit = Глава службы безопасности, комбинезон
