@@ -23,7 +23,7 @@
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletIonRifle
-      fireCost: 300
+      fireCost: 500
     - proto: BulletStaminaOrb
       fireCost: 100
     - proto: BulletShutdownOrb
