@@ -1,0 +1,45 @@
+- type: entity
+  name: fishing rod
+  parent: BaseItem
+  id: FishingRod
+  description: fish.
+  components:
+  - type: Sprite
+    sprite: ENT/Objects/Tools/fishingrod.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: FishingRod
+
+#Water
+
+- type: entity
+  name: water
+  parent: FloorWaterEntity
+  id: FloorPond
+  description: water.
+  suffix: Fish
+  components:
+  - type: Pond
+    fish: BaseFishSpawner
+
+#Markers
+
+- type: entity
+  name: Base fish
+  id: BaseFishSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Mobs/Aliens/Carps/space.rsi
+          state: icon
+    - type: RandomSpawner
+      rarePrototypes:
+      - MobSharkSalvage
+      rareChance: 0.01
+      prototypes:
+        - MobCarpSalvage
+      chance: 1
+      offset: 1
