@@ -306,3 +306,9 @@
     Piercing: 0.8
     Cold: 0.8
     Shock: 1.6
+    
+# protects against radiation
+- type: damageModifierSet
+  id: PotassiumIodide
+  coefficients:
+    Radiation: 0.1
