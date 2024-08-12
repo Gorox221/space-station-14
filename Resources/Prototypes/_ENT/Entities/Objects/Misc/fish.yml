@@ -9,7 +9,7 @@
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
+      - fishy
   - type: Sprite
     sprite: ENT/Objects/fish.rsi
   - type: Extractable
@@ -48,6 +48,34 @@
     - Fish
 
 - type: entity
+  name: raw fish fillet
+  parent: FoodMeatBase
+  # MeatFish?...
+  id: FoodMeatNormalFish
+  description: Your last words being "Wow, exotic!" are not worth it. The taste itself though? Maybe.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+  - type: Sprite
+    state: fishfillet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 5
+
+- type: entity
   name: angel
   parent: FoodFishBase
   id: FoodFishAngel
@@ -63,6 +91,9 @@
           Quantity: 10
         - ReagentId: Fat
           Quantity: 8
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
 
 - type: entity
   name: donk fish
@@ -80,6 +111,9 @@
           Quantity: 10
         - ReagentId: Fat
           Quantity: 8
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
 
 - type: entity
   name: cardinal
@@ -100,6 +134,9 @@
   - type: Tag
     tags:
     - Meat
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
 
 - type: entity
   name: cat fish
@@ -123,6 +160,9 @@
   - type: Tag
     tags:
     - Meat
+  - type: SliceableFood
+    count: 4
+    slice: FoodMeatNormalFish    
 
 - type: entity
   name: clown fish
@@ -143,6 +183,9 @@
   - type: Tag
     tags:
     - Meat
+  - type: SliceableFood
+    count: 1
+    slice: FoodMeatNormalFish    
 
 - type: entity
   name: emulsijack
@@ -166,6 +209,9 @@
   - type: Tag
     tags:
     - Meat
+  - type: SliceableFood
+    count: 5
+    slice: FoodMeatNormalFish
 
 - type: entity
   name: fire fish
@@ -186,6 +232,9 @@
   - type: Tag
     tags:
     - Meat
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
 
 - type: entity
   name: greenchromis
@@ -203,6 +252,9 @@
           Quantity: 10
         - ReagentId: Fat
           Quantity: 8
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
 
 - type: entity
   name: guppy
@@ -220,6 +272,9 @@
           Quantity: 5
         - ReagentId: Fat
           Quantity: 1
+  - type: SliceableFood
+    count: 1
+    slice: FoodMeatNormalFish
 
 - type: entity
   name: jumpercable
@@ -257,6 +312,9 @@
           Quantity: 10
         - ReagentId: Fat
           Quantity: 8
+  - type: SliceableFood
+    count: 4
+    slice: FoodMeatNormalFish
 
 - type: entity
   name: lava shrimp
@@ -317,6 +375,9 @@
   - type: Tag
     tags:
     - Meat
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
 
 - type: entity
   name: needle fish
