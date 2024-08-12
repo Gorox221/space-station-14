@@ -89,6 +89,12 @@
         - ClothingShoesFlippers
         - MobCrab
         - WaterDropletHat
+        - FoodFishAngel
+        - FoodFishCardinal
+        - FoodFishCat
+        - FoodFishClown
+        - FoodFishGreenchromis
+        - FoodFishDonk
       chance: 1
 
 - type: entity
@@ -128,6 +134,10 @@
         - GlowstickBlue
         - FoodBlueTomato
         - SilverOre1
+        - FoodFishEmulsijack
+        - FoodFishGuppy
+        - FoodFishLube
+        - FoodFishMoon
       chance: 1
 
 - type: entity
@@ -163,6 +173,10 @@
         - SheetSteel10
         - SheetGlass10
         - XenoBasherGlass
+        - FoodFishSlime
+        - FoodFishSludge
+        - FoodFishLantern
+        - FoodFishNeedle
       chance: 1
 
 - type: entity
@@ -192,6 +206,9 @@
         - ClothingNeckCloakGoliathCloak
         - TrashBakedBananaPeel
         - FoodMeatChickenFried
+        - FoodFishLava
+        - FoodFishFire
+        - FoodFishJumpercable
       chance: 1
 
 - type: entity
