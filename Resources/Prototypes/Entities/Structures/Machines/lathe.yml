@@ -118,6 +118,7 @@
     unlitIdleState: unlit
     unlitRunningState: unlit-building
     staticRecipes:
+      - FishingRod
       - Wirecutter
       - Igniter
       - Signaller

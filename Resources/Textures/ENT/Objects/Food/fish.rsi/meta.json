@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC BY-SA 3.0",
+  "copyright": "taked from TG station https://github.com/tgstation/tgstation/tree/master/icons/obj/food",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "fingers"
+    },
+    {
+      "name": "onigiri"
+    },
+    {
+      "name": "sushi"
+    }
+  ]
+}

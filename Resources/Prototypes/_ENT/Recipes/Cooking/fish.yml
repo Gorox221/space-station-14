@@ -1,0 +1,31 @@
+- type: microwaveMealRecipe
+  id: RecipeSushi
+  name: sushi recipe
+  result: FoodMealSushi
+  time: 5
+  reagents:
+    Rice: 3
+    TableSalt: 1
+  solids:
+    FoodMeatNormalFish: 1
+
+- type: microwaveMealRecipe
+  id: RecipeOnigiri
+  name: onigiri recipe
+  result: FoodMealOnigiri
+  time: 5
+  reagents:
+    Rice: 5
+    Soysauce: 2
+  solids:
+    FoodMeatNormalFish: 1
+
+- type: microwaveMealRecipe
+  id: RecipeFishFingers
+  name: fish fingers recipe
+  result: FoodMealFishFingers
+  time: 15
+  reagents:
+    Flour: 5
+  solids:
+    FoodMeatNormalFish: 2
