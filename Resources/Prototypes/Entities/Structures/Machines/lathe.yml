@@ -116,6 +116,7 @@
     idleState: icon
     runningState: building
     staticRecipes:
+      - FishingRod
       - Wirecutter
       - Igniter
       - Signaller
