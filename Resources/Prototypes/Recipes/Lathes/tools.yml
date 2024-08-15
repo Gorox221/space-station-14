@@ -245,3 +245,13 @@
     Steel: 750
     Plasma: 150
     Uranium: 150
+
+- type: latheRecipe
+  id: FishingRod
+  result: FishingRod
+  category: Tools
+  completetime: 2
+  materials:
+    Steel: 500
+    Cloth: 100
+    Plastic: 100

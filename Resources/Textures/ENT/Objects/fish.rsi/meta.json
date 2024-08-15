@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "license": "CC BY-SA 3.0",
+  "copyright": "taked from TG station https://github.com/tgstation/tgstation/blob/master/icons/obj/aquarium/fish.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "angel"
+    },
+    {
+      "name": "cardinal"
+    },
+    {
+      "name": "cat"
+    },
+    {
+      "name": "clown"
+    },
+    {
+      "name": "donk"
+    },
+    {
+      "name": "emulsijack"
+    },
+    {
+      "name": "firefish"
+    },
+    {
+      "name": "greenchromis"
+    },
+    {
+      "name": "guppy"
+    },
+    {
+      "name": "jumpercable"
+    },
+    {
+      "name": "lantern"
+    },
+    {
+      "name": "lava"
+    },
+    {
+      "name": "lube"
+    },
+    {
+      "name": "moon"
+    },
+    {
+      "name": "needle"
+    },
+    {
+      "name": "slime"
+    },
+    {
+      "name": "sludge"
+    }
+  ]
+}

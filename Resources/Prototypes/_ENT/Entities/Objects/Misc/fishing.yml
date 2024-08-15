@@ -1,0 +1,235 @@
+- type: entity
+  name: fishing rod
+  parent: BaseItem
+  id: FishingRod
+  description: fish.
+  components:
+  - type: Sprite
+    sprite: ENT/Objects/Tools/fishingrod.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: FishingRod
+
+#Water
+
+- type: entity
+  name: water
+  parent: FloorWaterEntity
+  id: FloorPond
+  description: water.
+  suffix: Fish
+  components:
+  - type: Pond
+    fish: BaseFishSpawner
+
+- type: entity
+  name: water
+  parent: FloorWaterEntity
+  id: FloorPondIce
+  description: water.
+  suffix: Fish, Ice
+  components:
+  - type: Pond
+    fish: IceFishSpawner
+
+- type: entity
+  name: water
+  parent: FloorWaterEntity
+  id: FloorPondCave
+  description: water.
+  suffix: Fish, Cave
+  components:
+  - type: Pond
+    fish: CaveFishSpawner
+
+- type: entity
+  name: lava
+  parent: FloorLavaEntity
+  id: FloorPondLava
+  description: water.
+  suffix: Fish, Lava
+  components:
+  - type: Pond
+    fish: LavaFishSpawner
+
+#Markers
+
+- type: entity
+  name: Base fish
+  noSpawn: true
+  id: BaseFishSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Mobs/Aliens/Carps/space.rsi
+          state: icon
+    - type: RandomSpawner
+      rarePrototypes:
+      - RareFishSpawner
+      - SheetUranium
+      - SpaceCash1000
+      - MedkitFilled
+      - DiamondOre1
+      - MobCarp
+      - ResearchDisk
+      - ClothingNeckCloakVoid
+      rareChance: 0.1
+      prototypes:
+        - ClothingShoesSnakeskinBoots
+        - FoodApple
+        - TechnologyDiskRare
+        - SheetPlastic10
+        - FoodBoxDonkpocket
+        - FoodAmbrosiaVulgaris
+        - StrangePill
+        - OrganHumanEyes
+        - ClothingShoesFlippers
+        - MobCrab
+        - WaterDropletHat
+        - FoodFishAngel
+        - FoodFishCardinal
+        - FoodFishCat
+        - FoodFishClown
+        - FoodFishGreenchromis
+        - FoodFishDonk
+      chance: 1
+
+- type: entity
+  name: Base fish
+  noSpawn: true
+  id: IceFishSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Mobs/Aliens/Carps/space.rsi
+          state: icon
+    - type: RandomSpawner
+      rarePrototypes:
+      - RareFishSpawner
+      - SheetPlasma
+      - ClothingHandsGlovesCombat
+      - ClothingEyesGlassesMeson
+      - PresentRandomUnsafe
+      rareChance: 0.1
+      prototypes:
+        - FoodFrozenPopsicleOrange
+        - FoodFrozenSnowconeMime
+        - FoodFrozenCornuto
+        - FoodFrozenSnowconeClown
+        - FoodFrozenSandwichStrawberry
+        - FoodFrozenFreezy
+        - FoodFrozenSnowcone
+        - FoodFrozenPopsicleJumbo
+        - FoodFrozenSnowconeRainbow
+        - DrinkIceCreamGlass
+        - ClothingHeadHatWelding
+        - ClothingShoesBootsWinterWeb
+        - ClothingOuterWinterCoat
+        - FoodChillyPepper
+        - GlowstickBlue
+        - FoodBlueTomato
+        - SilverOre1
+        - FoodFishEmulsijack
+        - FoodFishGuppy
+        - FoodFishLube
+        - FoodFishMoon
+      chance: 1
+
+- type: entity
+  name: Base fish
+  noSpawn: true
+  id: CaveFishSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Mobs/Aliens/Carps/space.rsi
+          state: icon
+    - type: RandomSpawner
+      rarePrototypes:
+      - MaterialDiamond1
+      - RareFishSpawner
+      - MindShieldImplanter
+      - ClothingOuterHardsuitSalvage
+      - ClothingNeckCloakMiner
+      rareChance: 0.1
+      prototypes:
+        - ShardCrystalRed
+        - DrinkBloodGlass
+        - MaterialBones1
+        - FoodSpaceshroom
+        - MetalFoamGrenade
+        - MysteryFigureBox
+        - SteelOre1
+        - GoldOre1
+        - SaltOre
+        - OreBox
+        - SheetSteel10
+        - SheetGlass10
+        - XenoBasherGlass
+        - FoodFishSlime
+        - FoodFishSludge
+        - FoodFishLantern
+        - FoodFishNeedle
+      chance: 1
+
+- type: entity
+  name: Base fish
+  noSpawn: true
+  id: LavaFishSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Mobs/Aliens/Carps/space.rsi
+          state: icon
+    - type: RandomSpawner
+      rarePrototypes:
+      - ComplexXenoArtifactItem
+      - RareFishSpawner
+      - SingularityToy
+      - WristwatchGold
+      - ClothingMaskGasAtmos
+      - ClothingHeadHelmetBone
+      rareChance: 0.1
+      prototypes:
+        - SheetPlasteel10
+        - Ash
+        - FoodMeatGoliathCooked
+        - ClothingNeckCloakGoliathCloak
+        - TrashBakedBananaPeel
+        - FoodMeatChickenFried
+        - FoodFishLava
+        - FoodFishFire
+        - FoodFishJumpercable
+      chance: 1
+
+- type: entity
+  name: Rare fish
+  noSpawn: true
+  id: RareFishSpawner
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: red
+        - sprite: Mobs/Aliens/Carps/space.rsi
+          state: icon
+    - type: RandomSpawner
+      rarePrototypes:
+      - SpaceCash1000000
+      - NukeDiskFake
+      - SyndicateIDCard
+      - ClothingOuterHardsuitMaxim
+      - WizardsGrimoireNoRefund
+      rareChance: 0.3
+      prototypes:
+        - BaseFishSpawner
+      chance: 0

@@ -1,0 +1,438 @@
+# Base
+- type: Tag
+  id: Fish
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodFishBase
+  abstract: true
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+  - type: Sprite
+    sprite: ENT/Objects/fish.rsi
+  - type: Extractable
+    grindableSolutionName: food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+        - ReagentId: Fat
+          Quantity: 2
+  - type: Item
+    size: Tiny
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 1
+        mask:
+        - ItemMask
+        restitution: 0.3  # fite me
+        friction: 0.2
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Meaterial: 300
+  - type: Tag
+    tags:
+    - Raw
+    - Fish
+
+- type: entity
+  name: raw fish fillet
+  parent: FoodMeatBase
+  # MeatFish?...
+  id: FoodMeatNormalFish
+  description: Your last words being "Wow, exotic!" are not worth it. The taste itself though? Maybe.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+  - type: Sprite
+    state: fishfillet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 5
+
+- type: entity
+  name: angel
+  parent: FoodFishBase
+  id: FoodFishAngel
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: angel
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Fat
+          Quantity: 8
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
+
+- type: entity
+  name: donk fish
+  parent: FoodFishBase
+  id: FoodFishDonk
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: donk
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Fat
+          Quantity: 8
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
+
+- type: entity
+  name: cardinal
+  parent: FoodFishBase
+  id: FoodFishCardinal
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: cardinal
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 13
+        - ReagentId: Fat
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
+
+- type: entity
+  name: cat fish
+  parent: FoodFishBase
+  id: FoodFishCat
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: cat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 15
+        - ReagentId: Fat
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+  - type: SliceableFood
+    count: 4
+    slice: FoodMeatNormalFish    
+
+- type: entity
+  name: clown fish
+  parent: FoodFishBase
+  id: FoodFishClown
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: clown
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Honk
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+  - type: SliceableFood
+    count: 1
+    slice: FoodMeatNormalFish    
+
+- type: entity
+  name: emulsijack
+  parent: FoodFishBase
+  id: FoodFishEmulsijack
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: emulsijack
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 25
+        - ReagentId: Fat
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+  - type: SliceableFood
+    count: 5
+    slice: FoodMeatNormalFish
+
+- type: entity
+  name: fire fish
+  parent: FoodFishBase
+  id: FoodFishFire
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: firefish
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Dermaline
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
+
+- type: entity
+  name: greenchromis
+  parent: FoodFishBase
+  id: FoodFishGreenchromis
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: greenchromis
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Fat
+          Quantity: 8
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
+
+- type: entity
+  name: guppy
+  parent: FoodFishBase
+  id: FoodFishGuppy
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: guppy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Fat
+          Quantity: 1
+  - type: SliceableFood
+    count: 1
+    slice: FoodMeatNormalFish
+
+- type: entity
+  name: jumpercable
+  parent: FoodFishBase
+  id: FoodFishJumpercable
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: jumpercable
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Oil
+          Quantity: 10
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: lantern fish
+  parent: FoodFishBase
+  id: FoodFishLantern
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: lantern
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 10
+        - ReagentId: Fat
+          Quantity: 8
+  - type: SliceableFood
+    count: 4
+    slice: FoodMeatNormalFish
+
+- type: entity
+  name: lava shrimp
+  parent: FoodFishBase
+  id: FoodFishLava
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: lava
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Fluorine
+          Quantity: 20
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: lube fish
+  parent: FoodFishBase
+  id: FoodFishLube
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: lube
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: SpaceLube
+          Quantity: 25
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: moon fish
+  parent: FoodFishBase
+  id: FoodFishMoon
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: moon
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Mannitol
+          Quantity: 25
+  - type: Tag
+    tags:
+    - Meat
+  - type: SliceableFood
+    count: 2
+    slice: FoodMeatNormalFish
+
+- type: entity
+  name: needle fish
+  parent: FoodFishBase
+  id: FoodFishNeedle
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: needle
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Razorium
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: slime fish
+  parent: FoodFishBase
+  id: FoodFishSlime
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: slime
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Slime
+          Quantity: 20
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: sludge fish
+  parent: FoodFishBase
+  id: FoodFishSludge
+  description: A slab of raw meat.
+  components:
+  - type: Sprite
+    state: sludge
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+        - ReagentId: Slime
+          Quantity: 15
+  - type: Tag
+    tags:
+    - Meat

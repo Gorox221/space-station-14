@@ -180,7 +180,7 @@
         fractalType: Ridged
         octaves: 1
       entities:
-        - FloorWaterEntity
+        - FloorPond
     # Fill remainder with dirt.
     - !type:BiomeTileLayer
       threshold: -1.0
@@ -276,7 +276,7 @@
       allowedTiles:
         - FloorBasalt
       entities:
-        - FloorLavaEntity
+        - FloorPondLava
     # Rock formations
     - !type:BiomeEntityLayer
       allowedTiles:
@@ -422,7 +422,6 @@
     # Liquid plasma rivers. Ice moon baby
     - !type:BiomeEntityLayer
       allowedTiles:
-      - FloorSnow
       - FloorIce
       threshold: 0.95
       noise:
@@ -433,7 +432,7 @@
         fractalType: Ridged
         octaves: 1
       entities:
-      - FloorLiquidPlasmaEntity
+      - FloorPondIce
     - !type:BiomeDummyLayer
       id: Loot
     - !type:BiomeTileLayer
@@ -539,6 +538,16 @@
         - CrystalOrange
         - CrystalBlue
         - CrystalCyan
+    - !type:BiomeEntityLayer
+      threshold: 0.85
+      noise:
+        seed: 3
+        noiseType: OpenSimplex2
+        fractalType: PingPong
+      allowedTiles:
+        - FloorAsteroidSand
+      entities:
+        - FloorPondCave
     - !type:BiomeEntityLayer
       threshold: 0.95
       noise:
