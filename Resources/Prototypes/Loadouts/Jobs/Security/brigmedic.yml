@@ -17,13 +17,12 @@
 # Jumpsuit
 - type: loadout
   id: BrigmedicJumpsuit
-  equipment: BrigmedicJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitBrigmedic
 
 - type: loadout
   id: BrigmedicJumpskirt
-  equipment: BrigmedicJumpskirt
+  equipment: 
     jumpsuit: ClothingUniformJumpskirtBrigmedic
 
 # Back
