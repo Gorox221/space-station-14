@@ -183,6 +183,7 @@
     - ClothingEyesNightVisionMeson
     - ClothingEyesNightVisionMedicine
     
+- type: technology    
   id: MassExcavation
   name: research-technology-excavation
   icon:
